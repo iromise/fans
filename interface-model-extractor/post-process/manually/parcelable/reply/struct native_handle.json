@@ -1,0 +1,145 @@
+{
+    "struct native_handle": {
+        "code": 0,
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "numFds",
+                    "numInts",
+                    "fd",
+                    "native_handle_int"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "variable": [
+            {
+                "count": 1,
+                "name": "numFds",
+                "self_constraint": [],
+                "under_constraint": [],
+                "dependency": [],
+                "serialization_type": 2,
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "name": "numInts",
+                "self_constraint":[],
+                "under_constraint": [],
+                "dependency": [],
+                "serialization_type": 2,
+                "type": "int",
+                "loop": []
+            },
+            {
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint0"
+                ],
+                "under_constraint": [
+                ],
+                "loop": [],
+                "dependency": [],
+                "count": 1,
+                "name": "i",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "count": 1,
+                "name": "fd",
+                "self_constraint": [],
+                "under_constraint": [],
+                "dependency": [],
+                "serialization_type": 2,
+                "type": "FileDescriptor",
+                "loop": ["loop0"]
+            },
+            {
+                "serialization_type": 0,
+                "self_constraint": [
+                    "constraint1"
+                ],
+                "under_constraint": [
+                ],
+                "loop": [],
+                "dependency": [],
+                "count": 1,
+                "name": "j",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "count": 1,
+                "name": "native_handle_int",
+                "self_constraint": [],
+                "under_constraint": [],
+                "dependency": [],
+                "serialization_type": 2,
+                "type": "int",
+                "loop": ["loop1"]
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "numFds"
+                },
+                "opcode": "<",
+                "name": "constraint0"
+            },
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "j"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "numInts"
+                },
+                "opcode": "<",
+                "name": "constraint1"
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                }
+            },
+            {
+                "name": "loop1",
+                "counter": {
+                    "type": "int",
+                    "name": "j",
+                    "value": 0
+                },
+                "constraint": "constraint1",
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "j"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "struct android::IGraphicBufferProducer::QueueBufferInput": {
+        "code": 0,
+        "constraint": [],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "timestamp",
+                    "isAutoTimestamp",
+                    "dataSpace",
+                    "crop",
+                    "scalingMode",
+                    "transform", 
+                    "stickyTransform", 
+                    "getFrameTimestamps", 
+                    "fence", 
+                    "surfaceDamage", 
+                    "hdrMetadata"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "timestamp",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "long long",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "isAutoTimestamp",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }, 
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "dataSpace",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "enum android_dataspace_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "crop",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Rect",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "scalingMode",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }, 
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "transform",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },  
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "stickyTransform",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "getFrameTimestamps",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "bool",
+                "flattenable":1,
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "fence",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Fence",
+                "loop": []
+            }, 
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "surfaceDamage",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Region",
+                "loop": []
+            }, 
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "hdrMetadata",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "struct android::HdrMetadata",
+                "loop": []
+            }
+        ],
+        "loop": []
+    }
+}

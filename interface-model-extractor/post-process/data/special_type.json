@@ -1,0 +1,5 @@
+{
+    "class std::__1::basic_string<char>":"string",
+    "class std::__1::unique_ptr<class std::__1::basic_string<char>, struct std::__1::default_delete<class std::__1::basic_string<char> > >":"string"
+}
+

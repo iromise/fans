@@ -1,0 +1,84 @@
+{
+    "class android::HdrCapabilities": {
+        "code": 0,
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "mMaxLuminance",
+                    "mMaxAverageLuminance",
+                    "mMinLuminance",
+                    "mSupportedHdrTypes"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "fixed":0,
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMaxLuminance",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMaxAverageLuminance",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mMinLuminance",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "float",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSupportedHdrTypes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "vector<int>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mSupportedHdrTypes::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }
+        ],
+        "constraint": [],
+        "loop": []
+    }
+}

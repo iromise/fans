@@ -1,0 +1,121 @@
+{
+    "class android::FrameStats": {
+        "code": 0,
+        "constraint": [
+        ],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [],
+                "data": [
+                    "refreshPeriodNano",
+                    "desiredPresentTimesNano",
+                    "actualPresentTimesNano",
+                    "frameReadyTimesNano"
+                ],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "fixed":0,
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],  
+                "name": "refreshPeriodNano",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],  
+                "name": "frameCount",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "desiredPresentTimesNano",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::Vector<nsecs_t>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "desiredPresentTimesNano::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "actualPresentTimesNano",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::Vector<nsecs_t>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "actualPresentTimesNano::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "frameReadyTimesNano",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "class android::Vector<nsecs_t>",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "frameReadyTimesNano::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "nsecs_t",
+                "loop": []
+            }
+        ],
+        "loop": []
+    }
+}

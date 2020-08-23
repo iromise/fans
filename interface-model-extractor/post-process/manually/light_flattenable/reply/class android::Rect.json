@@ -1,0 +1,74 @@
+{
+    "class android::Rect": {
+        "code": 0,
+        "constraint": [
+        ],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "left",
+                    "top",
+                    "right",
+                    "bottom"
+                ],
+                "data": [
+                ],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "fixed":1,
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],  
+                "name": "left",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "top",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "right",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "bottom",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            }
+        ],
+        "loop": []
+    }
+}

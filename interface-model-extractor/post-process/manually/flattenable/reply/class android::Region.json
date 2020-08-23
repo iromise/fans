@@ -1,0 +1,85 @@
+{
+    "class android::Region": {
+        "code": 0,
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "numRects",
+                    "rect"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "numRects",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "i",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "rect",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "class android::Rect",
+                "loop": ["loop0"]
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "int",
+                    "name": "i"
+                },
+                "rhs": {
+                    "type": "int",
+                    "name": "numRects"
+                },
+                "opcode": "<",
+                "name": "constraint0"
+            }
+        ],
+        "loop": [
+            {
+                "name": "loop0",
+                "counter": {
+                    "type": "int",
+                    "name": "i",
+                    "value": 0
+                },
+                "constraint": "constraint0",
+                "inc": {
+                    "type": "int",
+                    "opcode": "++",
+                    "name": "i"
+                }
+            }
+        ]
+    }
+}

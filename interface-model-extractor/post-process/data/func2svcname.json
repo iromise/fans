@@ -1,0 +1,666 @@
+{
+    "BnBatteryStats": {
+        "serviceName": "batterystats",
+        "interfaceToken": "com.android.internal.app.IBatteryStats",
+        "interfaceName":"IBatteryStats"
+    },
+    "BnMediaExtractorService": {
+        "serviceName": "media.extractor",
+        "interfaceToken": "android.media.IMediaExtractorService",
+        "interfaceName":"IMediaExtractorService"
+    },
+    "BnSensorServer": {
+        "serviceName": "sensorservice",
+        "interfaceToken": "android.gui.SensorServer",
+        "interfaceName":"ISensorServer"
+    },
+    "BnSurfaceComposer": {
+        "serviceName": "SurfaceFlinger",
+        "interfaceToken": "android.ui.ISurfaceComposer",
+        "interfaceName":"ISurfaceComposer"
+    },
+    "SurfaceFlinger": {
+        "serviceName": "SurfaceFlinger",
+        "interfaceToken": "android.ui.ISurfaceComposer",
+        "interfaceName":"ISurfaceComposer"
+    },
+    "BnMediaAnalyticsService": {
+        "serviceName": "media.metrics",
+        "interfaceToken": "android.media.IMediaAnalyticsService",
+        "interfaceName":"IMediaAnalyticsService"
+    },
+    "BnAAudioService": {
+        "serviceName": "media.aaudio",
+        "interfaceToken": "IAAudioService",
+        "interfaceName":"IAAudioService"
+    },
+    "BnMediaDrmService": {
+        "serviceName": "media.drm",
+        "interfaceToken": "android.media.IMediaDrmService",
+        "interfaceName":"IMediaDrmService"
+    },
+    "BnSoundTriggerHwService": {
+        "serviceName": "media.sound_trigger_hw",
+        "interfaceToken": "android.hardware.ISoundTriggerHwService",
+        "interfaceName":"ISoundTriggerHwService"
+    },
+    "BnGpuService": {
+        "serviceName": "gpu",
+        "interfaceToken": "android.ui.IGpuService",
+        "interfaceName":"IGpuService"
+    },
+    "BnDrmManagerService": {
+        "serviceName": "drm.drmManager",
+        "interfaceToken": "drm.IDrmManagerService",
+        "interfaceName":"IDrmManagerService"
+    },
+    "BnMediaPlayerService": {
+        "serviceName": "media.player",
+        "interfaceToken": "android.media.IMediaPlayerService",
+        "interfaceName":"IMediaPlayerService"
+    },
+    "BnAudioFlinger": {
+        "serviceName": "media.audio_flinger",
+        "interfaceToken": "android.media.IAudioFlinger",
+        "interfaceName":"IAudioFlinger"
+    },
+    "BnAudioPolicyService": {
+        "serviceName": "media.audio_policy",
+        "interfaceToken": "android.media.IAudioPolicyService",
+        "interfaceName":"IAudioPolicyService"
+    },
+    "AudioPolicyService": {
+        "serviceName": "media.audio_policy",
+        "interfaceToken": "android.media.IAudioPolicyService",
+        "interfaceName":"IAudioPolicyService"
+    },
+    "BnGateKeeperService": {
+        "serviceName": "android.service.gatekeeper.IGateKeeperService",
+        "interfaceToken": "android.service.gatekeeper.IGateKeeperService",
+        "interfaceName":"IGateKeeperService"
+    },
+    "CameraService": {
+        "serviceName": "media.camera",
+        "interfaceToken": "android.hardware.ICameraService",
+        "interfaceName":"ICameraService"
+    },
+    "BnCameraService": {
+        "serviceName": "media.camera",
+        "interfaceToken": "android.hardware.ICameraService",
+        "interfaceName":"ICameraService"
+    },
+    "BnCameraServiceProxy": {
+        "serviceName": "media.camera.proxy",
+        "interfaceToken": "android.hardware.ICameraServiceProxy",
+        "interfaceName":"ICameraServiceProxy"
+    },
+    "BnResourceManagerService": {
+        "serviceName": "media.resource_manager",
+        "interfaceToken": "android.media.IResourceManagerService",
+        "interfaceName":"IResourceManagerService"
+    },
+    "BnPermissionController": {
+        "serviceName": "permission",
+        "interfaceToken": "android.os.IPermissionController",
+        "interfaceName": "IPermissionController"
+    },
+    "BnAppOpsService": {
+        "serviceName": "appops",
+        "interfaceToken": "com.android.internal.app.IAppOpsService",
+        "interfaceName":"IAppOpsService"
+    },
+    "BnMediaResourceMonitor": {
+        "serviceName": "media_resource_monitor",
+        "interfaceToken": "android.media.IMediaResourceMonitor",
+        "interfaceName":"IMediaResourceMonitor"
+    },
+    "BnSchedulingPolicyService": {
+        "serviceName": "scheduling_policy",
+        "interfaceToken": "android.os.ISchedulingPolicyService",
+        "interfaceName": "ISchedulingPolicyService"
+    },
+    "IncidentService": {
+        "serviceName": "incident",
+        "interfaceToken": "android.os.IIncidentManager",
+        "interfaceName":"IIncidentManager"
+    },
+    "BnIncidentManager": {
+        "serviceName": "incident",
+        "interfaceToken": "android.os.IIncidentManager",
+        "interfaceName":"IIncidentManager"
+    },
+    "BnNetd": {
+        "serviceName": "netd",
+        "interfaceToken": "android.net.INetd",
+        "interfaceName":"INetd"
+    },
+    "BnNetdEventListener": {
+        "serviceName": "netd_listener",
+        "interfaceToken": "android.net.metrics.INetdEventListener",
+        "interfaceName":"INetdEventListener"
+    },
+    "BnStatsManager": {
+        "serviceName": "stats",
+        "interfaceToken": "android.os.IStatsManager",
+        "interfaceName":"IStatsManager"
+    },
+    "StatsService": {
+        "serviceName": "stats",
+        "interfaceToken": "android.os.IStatsManager",
+        "interfaceName":"IStatsManager"
+    },
+    "BnWificond": {
+        "serviceName": "wificond",
+        "interfaceToken": "android.net.wifi.IWificond",
+        "interfaceName":"IWificond"
+    },
+    "BnInstalld": {
+        "serviceName": "installd",
+        "interfaceToken": "android.os.IInstalld",
+        "interfaceName":"IInstalld"
+    },
+    "BnPackageManagerNative": {
+        "serviceName": "package_native",
+        "interfaceToken": "android.content.pm.IPackageManagerNative",
+        "interfaceName":"IPackageManagerNative"
+    },
+    "BnStatsCompanionService": {
+        "serviceName": "statscompanion",
+        "interfaceToken": "android.os.IStatsCompanionService",
+        "interfaceName":"IStatsCompanionService"
+    },
+    "BnKeyAttestationApplicationIdProvider": {
+        "serviceName": "sec_key_att_app_id_provider",
+        "interfaceToken": "android.security.keymaster.IKeyAttestationApplicationIdProvider",
+        "interfaceName":"IKeyAttestationApplicationIdProvider"
+    },
+    "BnKeystoreService": {
+        "serviceName": "android.security.keystore",
+        "interfaceToken": "android.security.IKeystoreService",
+        "interfaceName":"IKeystoreService"
+    },
+    "BnMediaExtractorUpdateService": {
+        "serviceName": "media.extractor.update",
+        "interfaceToken": "android.media.IMediaExtractorUpdateService",
+        "interfaceName":"IMediaExtractorUpdateService"
+    },
+    "BnPerfProfd": {
+        "serviceName": "perfprofd",
+        "interfaceToken": "android.os.IPerfProfd",
+        "interfaceName":"IPerfProfd"
+    },
+    "PerfProfdNativeService": {
+        "serviceName": "perfprofd",
+        "interfaceToken": "android.os.IPerfProfd",
+        "interfaceName":"IPerfProfd"
+    },
+    "BnDropBoxManagerService": {
+        "serviceName": "dropbox",
+        "interfaceToken": "com.android.internal.os.IDropBoxManagerService",
+        "interfaceName":"IDropBoxManagerService"
+    },
+    "BnStoraged": {
+        "serviceName": "storaged",
+        "interfaceToken": "android.os.IStoraged",
+        "interfaceName":"IStoraged"
+    },
+    "BnStoragedPrivate": {
+        "serviceName": "storaged_pri",
+        "interfaceToken": "android.os.storaged.IStoragedPrivate",
+        "interfaceName":"IStoragedPrivate"
+    },
+    "BnThermalService": {
+        "serviceName": "thermalservice",
+        "interfaceToken": "android.os.IThermalService",
+        "interfaceName": "IThermalService"
+    },
+    "BnVold": {
+        "serviceName": "vold",
+        "interfaceToken": "android.os.IVold",
+        "interfaceName":"IVold"
+    },
+    "BnUpdateEngine": {
+        "serviceName": "android.os.UpdateEngineService",
+        "interfaceToken": "android.os.IUpdateEngine",
+        "interfaceName":"IUpdateEngine"
+    },
+    "BnMediaLogService": {
+        "serviceName": "media.log",
+        "interfaceToken": "android.media.IMediaLogService",
+        "interfaceName":"IMediaLogService"
+    },
+    "MediaLogService": {
+        "serviceName": "media.log",
+        "interfaceToken": "android.media.IMediaLogService",
+        "interfaceName":"IMediaLogService"
+    },
+    "BnEffect": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IEffect",
+        "interfaceName":"IEffect"
+    },
+    "BnMediaExtractor": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaExtractor",
+        "interfaceName":"IMediaExtractor"
+    },
+    "BnDataSource": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IDataSource",
+        "interfaceName":"IDataSource"
+    },
+    "BnMemory": {
+        "serviceName": "None",
+        "interfaceToken": "android.utils.IMemory",
+        "interfaceName":"IMemory"
+    },
+    "BnMemoryHeap": {
+        "serviceName": "None",
+        "interfaceToken": "android.utils.IMemoryHeap",
+        "interfaceName":"IMemoryHeap"
+    },
+    "BnCrypto": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICrypto",
+        "interfaceName":"ICrypto"
+    },
+    "BnDrm": {
+        "serviceName": "None",
+        "interfaceToken": "android.drm.IDrm",
+        "interfaceName":"IDrm"
+    },
+    "BnSoundTrigger": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ISoundTrigger",
+        "interfaceName":"ISoundTrigger"
+    },
+    "BnSensorEventConnection": {
+        "serviceName": "None",
+        "interfaceToken": "android.gui.SensorEventConnection",
+        "interfaceName":"ISensorEventConnection"
+    },
+    "BnMediaPlayer": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaPlayer",
+        "interfaceName":"IMediaPlayer"
+    },
+    "BnMediaRecorder": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaRecorder",
+        "interfaceName":"IMediaRecorder"
+    },
+    "BnMediaHTTPService":{
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaHTTPService",
+        "interfaceName":"IMediaHTTPService"
+    },
+    "BnGraphicBufferProducer": {
+        "serviceName": "None",
+        "interfaceToken": "android.gui.IGraphicBufferProducer",
+        "interfaceName":"IGraphicBufferProducer"
+    },
+    "BnMediaMetadataRetriever": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaMetadataRetriever",
+        "interfaceName":"IMediaMetadataRetriever"
+    },
+    "BnRemoteDisplay": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IRemoteDisplay",
+        "interfaceName":"IRemoteDisplay"
+    },
+    "BnRemoteDisplayClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IRemoteDisplayClient",
+        "interfaceName":"IRemoteDisplayClient"
+    },
+    "BnMediaCodecList": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaCodecList",
+        "interfaceName":"IMediaCodecList"
+    },
+    "BnAudioTrack": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IAudioTrack",
+        "interfaceName":"IAudioTrack"
+    },
+    "BnSurfaceComposerClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.ui.ISurfaceComposerClient",
+        "interfaceName":"ISurfaceComposerClient"
+    },
+    "BnDisplayEventConnection": {
+        "serviceName": "None",
+        "interfaceToken": "android.gui.DisplayEventConnection",
+        "interfaceName":"IDisplayEventConnection"
+    },
+    "BnAAudioClient": {
+        "serviceName": "None",
+        "interfaceToken": "IAAudioClient",
+        "interfaceName":"IAAudioClient"
+    },
+    "BnSoundTriggerClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ISoundTriggerClient",
+        "interfaceName":"ISoundTriggerClient"
+    },
+    "BnDrmClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IDrmClient",
+        "interfaceName":"IDrmClient"
+    },
+    "BnResourceManagerClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IResourceManagerClient",
+        "interfaceName":"IResourceManagerClient"
+    },
+    "BnCameraClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICameraClient",
+        "interfaceName":"ICameraClient"
+    },
+    "BnCamera": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICamera",
+        "interfaceName":"ICamera"
+    },
+    "BnCameraRecordingProxy": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICameraRecordingProxy",
+        "interfaceName":"ICameraRecordingProxy"
+    },
+    "BnCameraRecordingProxyListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICameraRecordingProxyListener",
+        "interfaceName":"ICameraRecordingProxyListener"
+    },
+    "BnMediaRecorderClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaRecorderClient",
+        "interfaceName":"IMediaRecorderClient"
+    },
+    "BnProducerListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.gui.IProducerListener",
+        "interfaceName":"IProducerListener"
+    },
+    "BnStreamSource": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.IStreamSource",
+        "interfaceName":"IStreamSource"
+    },
+    "BnStreamListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.IStreamListener",
+        "interfaceName":"IStreamListener"
+    },
+    "BnAudioPolicyServiceClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IAudioPolicyServiceClient",
+        "interfaceName":"IAudioPolicyServiceClient"
+    },
+    "BnDrmServiceListener": {
+        "serviceName": "None",
+        "interfaceToken": "drm.IDrmServiceListener",
+        "interfaceName":"IDrmServiceListener"
+    },
+    "BnEffectClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IEffectClient",
+        "interfaceName":"IEffectClient"
+    },
+    "BnMediaSource": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaSource",
+        "interfaceName":"IMediaSource"
+    },
+    "BnAudioRecord": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IAudioRecord",
+        "interfaceName":"IAudioRecord"
+    },
+    "BnIncidentReportStatusListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IIncidentReportStatusListener",
+        "interfaceName":"IIncidentReportStatusListener"
+    },
+    "BnApInterface": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IApInterface",
+        "interfaceName":"IApInterface"
+    },
+    "BnApInterfaceEventCallback": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IApInterfaceEventCallback",
+        "interfaceName":"IApInterfaceEventCallback"
+    },
+    "BnClientInterface": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IClientInterface",
+        "interfaceName": "IClientInterface"
+    },
+    "BnInterfaceEventCallback": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IInterfaceEventCallback",
+        "interfaceName":"IInterfaceEventCallback"
+    },
+    "BnPnoScanEvent": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IPnoScanEvent",
+        "interfaceName":"IPnoScanEvent"
+    },
+    "BnScanEvent": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IScanEvent",
+        "interfaceName":"IScanEvent"
+    },
+    "BnWifiScannerImpl": {
+        "serviceName": "None",
+        "interfaceToken": "android.net.wifi.IWifiScannerImpl",
+        "interfaceName":"IWifiScannerImpl"
+    },
+    "BnCameraServiceListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.ICameraServiceListener",
+        "interfaceName": "ICameraServiceListener"
+    },
+    "BnCameraDeviceCallbacks": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.camera2.ICameraDeviceCallbacks",
+        "interfaceName":"ICameraDeviceCallbacks"
+    },
+    "BnCameraDeviceUser": {
+        "serviceName": "None",
+        "interfaceToken": "android.hardware.camera2.ICameraDeviceUser",
+        "interfaceName":"ICameraDeviceUser"
+    },
+    "BnThermalEventListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IThermalEventListener",
+        "interfaceName":"IThermalEventListener"
+    },
+    "BnShellCallback": {
+        "serviceName": "None",
+        "interfaceToken": "com.android.internal.os.IShellCallback",
+        "interfaceName":"IShellCallback"
+    },
+    "BnAppOpsCallback": {
+        "serviceName": "None",
+        "interfaceToken": "com.android.internal.app.IAppOpsCallback",
+        "interfaceName":"IAppOpsCallback"
+    },
+    "BnAudioFlingerClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IAudioFlingerClient",
+        "interfaceName":"IAudioFlingerClient"
+    },
+    "BnResultReceiver": {
+        "serviceName": "None",
+        "interfaceToken": "com.android.internal.os.IResultReceiver",
+        "interfaceName": "IResultReceiver"
+    },
+    "BnMediaPlayerClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.IMediaPlayerClient",
+        "interfaceName":"IMediaPlayerClient"
+    },
+    "BnUpdateEngineCallback": {
+        "serviceName": "IUpdateEngineCallback",
+        "interfaceToken": "android.os.IUpdateEngineCallback",
+        "interfaceName":"IUpdateEngineCallback"
+    },
+    "BnTpmManagerClient": {
+        "serviceName": "TpmManagerClient",
+        "interfaceToken": "android.tpm_manager.ITpmManagerClient"
+    },
+    "BnTpmNvram": {
+        "serviceName": "TpmNvram",
+        "interfaceToken": "android.tpm_manager.ITpmNvram"
+    },
+    "BnTpmOwnership": {
+        "serviceName": "TpmOwnership",
+        "interfaceToken": "android.tpm_manager.ITpmOwnership"
+    },
+    "BnPlayer": {
+        "serviceName": "Player",
+        "interfaceToken": "android.media.IPlayer",
+        "interfaceName":"IPlayer"
+    },
+    "BnBluetoothSocketManager": {
+        "serviceName": "BluetoothSocketManager",
+        "interfaceToken": "android.bluetooth.IBluetoothSocketManager",
+        "interfaceName":"IBluetoothSocketManager"
+    },
+    "BnDumpstateListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IDumpstateListener",
+        "interfaceName":"IDumpstateListener"
+    },
+    "BnDumpstate": {
+        "serviceName": "dumpstate",
+        "interfaceToken": "android.os.IDumpstate",
+        "interfaceName":"IDumpstate"
+    },
+    "BnConfirmationPromptCallback": {
+        "serviceName": "None",
+        "interfaceToken": "android.security.IConfirmationPromptCallback",
+        "interfaceName":"IConfirmationPromptCallback"
+    },
+    "BnOMX": {
+        "serviceName": "OMX",
+        "interfaceToken": "android.hardware.IOMX"
+    },
+    "BnOMXNode": {
+        "serviceName": "OMXNode",
+        "interfaceToken": "android.hardware.IOMXNode"
+    },
+    "BnOMXObserver": {
+        "serviceName": "OMXObserver",
+        "interfaceToken": "android.hardware.IOMXObserver"
+    },
+    "BnOMXBufferSource": {
+        "serviceName": "OMXBufferSource",
+        "interfaceToken": "android.IOMXBufferSource",
+        "interfaceName":"IOMXBufferSource"
+    },
+    "BnDumpstateToken": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IDumpstateToken",
+        "interfaceName":"IDumpstateToken"
+    },
+    "BnMidiDeviceServer": {
+        "serviceName": "None",
+        "interfaceToken": "android.media.midi.IMidiDeviceServer",
+        "interfaceName":"IMidiDeviceServer"
+    },
+    "BnGraphicBufferSource": {
+        "serviceName": "GraphicBufferSource",
+        "interfaceToken": "android.IGraphicBufferSource",
+        "interfaceName":"IGraphicBufferSource"
+    },
+    "BnTrunksClient": {
+        "serviceName": "TrunksClient",
+        "interfaceToken": "android.trunks.ITrunksClient"
+    },
+    "BnTrunks": {
+        "serviceName": "Trunks",
+        "interfaceToken": "android.trunks.ITrunks"
+    },
+    "BnVrManager": {
+        "serviceName": "vrmanager",
+        "interfaceToken": "android.service.vr.IVrManager"
+    },
+    "BnVrStateCallbacks": {
+        "serviceName": "None",
+        "interfaceToken": "android.service.vr.IVrStateCallbacks",
+        "interfaceName":"IVrStateCallbacks"
+    },
+    "BnVrComposer": {
+        "serviceName": "VrComposer",
+        "interfaceToken": "android.dvr.IVrComposer"
+    },
+    "BnVrComposerCallback": {
+        "serviceName": "VrComposerCallback",
+        "interfaceToken": "android.dvr.IVrComposerCallback"
+    },
+    "BnPersistentVrStateCallbacks": {
+        "serviceName": "None",
+        "interfaceToken": "android.service.vr.IPersistentVrStateCallbacks",
+        "interfaceName":"IPersistentVrStateCallbacks"
+    },
+    "BnInputFlinger": {
+        "serviceName": "None",
+        "interfaceToken": "android.input.IInputFlinger",
+        "interfaceName":"IInputFlinger"
+    },
+    "BnObbActionListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.storage.IObbActionListener",
+        "interfaceName":"IObbActionListener"
+    },
+    "BnMountServiceListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.storage.IStorageEventListener",
+        "interfaceName":"IMountServiceListener"
+    },
+    "BnVoldTaskListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IVoldTaskListener",
+        "interfaceName":"IVoldTaskListener"
+    },
+    "BnVoldListener": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.IVoldListener",
+        "interfaceName":"IVoldListener"
+    },
+    "BnMountShutdownObserver": {
+        "serviceName": "None",
+        "interfaceToken": "android.os.storage.IStorageShutdownObserver",
+        "interfaceName":"IMountShutdownObserver"
+    },
+    "BnUidObserver": {
+        "serviceName": "None",
+        "interfaceToken": "android.app.IUidObserver",
+        "interfaceName":"IUidObserver"
+    },
+    "BnGraphicBufferConsumer": {
+        "serviceName": "GraphicBufferConsumer",
+        "interfaceToken": "android.gui.IGraphicBufferConsumer",
+        "interfaceName":"IGraphicBufferConsumer"
+    },
+    "BnConsumerListener": {
+        "serviceName": "ConsumerListener",
+        "interfaceToken": "android.gui.IConsumerListener",
+        "interfaceName":"IConsumerListener"
+    },
+    "BnQHDMIClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.display.IQHDMIClient",
+        "interfaceName":"IQHDMIClient"
+    },
+    "BnQClient": {
+        "serviceName": "None",
+        "interfaceToken": "android.display.IQClient",
+        "interfaceName":"IQClient"
+    }
+}

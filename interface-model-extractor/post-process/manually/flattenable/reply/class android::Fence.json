@@ -1,0 +1,47 @@
+{
+    "class android::Fence": {
+        "code": 0,
+        "constraint": [
+        ],
+        "possibility": [
+            {
+                "return": "",
+                "reply": [
+                    "numFds",
+                    "mFenceFd"
+                ],
+                "data": [],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "numFds",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mFenceFd",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 2,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            }
+        ],
+        "loop": [
+        ]
+    }
+}

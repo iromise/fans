@@ -1,0 +1,25 @@
+# vscode
+.vscode
+
+# python
+__pycache__/
+
+*.py[cod]
+
+##### ignore personal configs, scripts and data #####
+fans.cfg
+
+interface-model-extractor/pre-process/BinderIface/compile_commands.json
+
+fuzzer-engine/setup.sh
+fuzzer-engine/test_fuzzer.sh
+fuzzer-engine/manager/flash.cfg
+fuzzer-engine/manager/device.cfg
+fuzzer-engine/manager/fuzzer.cfg
+
+workdir/service-related-file/interface2file.json
+workdir/service-related-file/service_related_file.txt
+
+workdir/interface-model-extractor/*
+
+workdir/interface-dependency/*

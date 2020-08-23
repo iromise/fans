@@ -1,0 +1,122 @@
+{
+    "struct android::HdrMetadata": {
+        "code": 0,
+        "possibility": [
+            {
+                "return": "",
+                "reply": [],
+                "data": [
+                    "validTypes",
+                    "smpte2086",
+                    "cta8613"
+                ],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "fixed":0,
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "validTypes",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "SMPTE2086",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "value":1,
+                "loop": []
+            },            
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "smpte2086",
+                "under_constraint": [
+                    {
+                        "name":"constraint0",
+                        "status":true
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct android_smpte2086_metadata",
+                "loop": []
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "CTA861_3",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 0,
+                "usedBy": [],
+                "type": "IntegerLiteral",
+                "value":2,
+                "loop": []
+            },    
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "cta8613",
+                "under_constraint": [
+                    {
+                        "name":"constraint1",
+                        "status":true
+                    }
+                ],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "struct android_cta861_3_metadata",
+                "loop": []
+            }
+        ],
+        "constraint": [
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "validTypes"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "SMPTE2086",
+                    "value":1
+                },
+                "opcode": "&",
+                "name": "constraint0"
+            },
+            {
+                "lhs": {
+                    "type": "unsigned int",
+                    "name": "validTypes"
+                },
+                "rhs": {
+                    "type": "IntegerLiteral",
+                    "name": "CTA861_3",
+                    "value":2
+                },
+                "opcode": "&",
+                "name": "constraint1"
+            }
+        ],
+        "loop": []
+    }
+}

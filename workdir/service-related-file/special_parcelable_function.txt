@@ -1,0 +1,11 @@
+keystore::writeParamSetToParcel+android::status_t (const hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter> &, android::Parcel *)+struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>+writeToParcel
+keystore::readParamSetFromParcel+hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter> (const android::Parcel &)+struct android::hardware::hidl_vec<struct android::hardware::keymaster::V4_0::KeyParameter>+readFromParcel
+writeDecryptHandleToParcelData+void (const class android::DecryptHandle *, class android::Parcel *)+class android::DecryptHandle+writeToParcel
+android::layer_state_t::read+android::status_t (const class android::Parcel &)+struct android::layer_state_t+readFromParcel
+android::MetaDataBase::updateFromParcel+android::status_t (const class android::Parcel &)+class android::MetaDataBase+readFromParcel
+android::ComposerState::read+android::status_t (const class android::Parcel &)+struct android::ComposerState+readFromParcel
+android::DisplayState::read+android::status_t (const class android::Parcel &)+struct android::DisplayState+readFromParcel
+readDecryptHandleFromParcelData+void (class android::DecryptHandle *, const class android::Parcel &)+class android::DecryptHandle+readFromParcel
+android::MetaData::createFromParcel+sp<class android::MetaData> (const class android::Parcel &)+class android::MetaData+readFromParcel
+keystore::readKeyParameterFromParcel+NullOr<struct android::hardware::keymaster::V4_0::KeyParameter> (const android::Parcel &)+struct android::hardware::keymaster::V4_0::KeyParameter+readFromParcel
+keystore::writeKeyParameterToParcel+android::status_t (const struct android::hardware::keymaster::V4_0::KeyParameter &, android::Parcel *)+struct android::hardware::keymaster::V4_0::KeyParameter+writeToParcel

@@ -1,0 +1,27 @@
+size_t
+ssize_t
+IntegerLiteral
+float
+FloatingLiteral
+double
+uint32_t
+unsigned int
+int32_t
+int
+int64_t
+long
+long long
+uint64_t
+unsigned long
+unsigned long long
+int8_t
+char
+uint8_t
+unsigned char
+void
+bool
+_Bool
+uint16_t
+unsigned short
+int16_t
+short

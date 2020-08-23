@@ -1,0 +1,226 @@
+{
+    "class android::GraphicBuffer": {
+        "code": 0,
+        "possibility": [
+            {
+                "return": "",
+                "reply": [],
+                "data": [
+                    "GraphicBufferHeader",
+                    "width",
+                    "height",
+                    "stride",
+                    "format",
+                    "layerCount",
+                    "usageLow32Bits",
+                    "mIdHigh32Bits",
+                    "mIdLow32Bits",
+                    "mGenerationNumber",
+                    "mTransportNumFds",
+                    "mTransportNumInts",
+                    "usageHigh32Bits",
+                    "mTransport",
+                    "fds"
+                ],
+                "id": 0
+            }
+        ],
+        "dependency": [],
+        "variable": [
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "GraphicBufferHeader",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "width",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "height",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "stride",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "format",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "android::PixelFormat"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "layerCount",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "usageLow32Bits",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mIdHigh32Bits",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mIdLow32Bits",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "unsigned int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mGenerationNumber",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTransportNumFds",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTransportNumInts",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "usageHigh32Bits",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTransport",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "std::vector<int>",
+                "size": "mTransportNumInts"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "mTransport::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "int"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "fds",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "std::vector<FileDescriptor>",
+                "loop": [],
+                "size": "mTransportNumFds"
+            },
+            {
+                "count": 1,
+                "self_constraint": [],
+                "name": "fds::item",
+                "under_constraint": [],
+                "dependency": [],
+                "relation": [],
+                "serialization_type": 1,
+                "usedBy": [],
+                "type": "FileDescriptor",
+                "loop": []
+            }
+        ],
+        "constraint": [
+        ],
+        "loop": []
+    }
+}

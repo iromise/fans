@@ -1,0 +1,81 @@
+cc_binary {
+    name: "native_service_fuzzer",
+
+    srcs: [
+        "src/interface/*",
+        "src/types/*",
+        "src/utils/*",
+        "src/*",
+        "src/test/*"
+        ],
+
+    shared_libs: [
+        "libutils",
+        "libbinder",
+        "liblog",
+        "libmedia",
+        "libmedia_omx",
+        "libaudioutils",
+        "libcamera_client",
+        "libcutils",
+        "libdl",
+        "libdrmframework",
+        "libgui",
+        "libion",
+        "libaudioclient",
+        "libmediaextractor",
+        "libmediametrics",
+        "libmediautils",
+        "libnetd_client",
+        "libui",
+        "libmedia_helper",
+        "libstagefright_codecbase",
+        "libstagefright_foundation",
+        "libstagefright_omx_utils",
+        "libstagefright_xmlparser",
+        "libstagefright_http_support",
+        "libRScpp",
+        "libhidlallocatorutils",
+        "libhidlbase",
+        "libhidlmemory",
+        "libziparchive",
+        "libstagefright",
+        "libaaudio",
+        "libandroid_runtime",
+        "libsoundtrigger",
+        "libaudioclient",
+        "libdrmframework",
+        "libmediandk",
+        // "libcamera2ndk",
+        "libnativehelper",
+        "libwilhelm",
+        "libmedialogservice",
+        "libmediadrm"
+    ],
+    // local_share_library:[
+    // ]
+    // header_libs: [
+    // ],
+    // runtime_libs:[
+    // ],
+    static_libs:[
+        "libjsoncpp",
+    ],
+    whole_static_libs: ["libsigchain"],
+    local_include_dirs: ["include"],
+    include_dirs:["frameworks/wilhelm/src","frameworks/av/services/medialog","out/target/product/taimen/obj/STATIC_LIBRARIES/libwificond_ipc_intermediates/aidl-generated/include","system/connectivity"],
+    cflags: [
+        "-DXP_UNIX",
+        "-Wall",
+        "-g",
+        "-Wextra",
+        "-Wno-unused-parameter",
+        "-DLI_API=__attribute__((visibility(\"default\")))"
+    ],
+    ldflags: [
+    "-Wl,--export-dynamic"
+    ],
+    version_script: "version-script.txt",
+    cppflags: [
+            ]
+}
