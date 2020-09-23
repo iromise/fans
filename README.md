@@ -31,7 +31,9 @@ Suppose we have
   -  https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds
   -  https://developers.google.com/android/drivers
 
-Before building, we'd better modify some options in `/path/to/aosp/build/core/main.mk` to make fuzzing more convenient.
+Before building, we'd better modify some options in the following files to make fuzzing more convenient.
+
+`/path/to/aosp/build/core/main.mk`
 
 - ro.adb.secure=0, which will disable adb authentication. Otherwise, every time we reflash the phone, we need to click the screen manually to trust the host. Disabling adb authentication will help us reflash the mobile automatically as we will reflash the mobile phone through adb.
 
@@ -60,6 +62,22 @@ ifneq (,$(user_variant))
   #ifeq ($(user_variant),user)
   #  ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
   #endif
+```
+`/path/to/aosp/build/make/target/product/core_minimal.mk`
+
+- tombstoned.max_tombstone_count=99999, which will set the maximum number of tombstones to 99999.
+```
+# line 170
+## before modifying
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    tombstoned.max_tombstone_count=50
+endif
+## after modifying
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    tombstoned.max_tombstone_count=99999
+endif
 ```
 
 Note, when flashing the image, you should use the correct `adb` and `fastboot` version corresponding to the Android version. So please install Android SDK according to the version of the target phone. For instance, we are testing Android 9.0.0_r46, so we install the Android SDK for Android 9.0. After installing the SDK, please create the following symbolic links
